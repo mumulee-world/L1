@@ -4,11 +4,31 @@
 		<title></title>
 		<style type="text/css">
 			h1{
+				width: 400px;
 				color: red;
+				text-align: center;
+				display: block;
+				margin: 100px auto;
+				font-size: 50px;
+				padding: 30px 30px;
+				border: 2px green dashed;
 			}
 		</style>
 	</head>
 	<body>
 		<h1>Merry Christmas</h1>
 	</body>
+	<script type="text/javascript" src="JS/jquery-2.1.0.js" ></script>
+	<script type="text/javascript">
+		setInterval(function(){
+			var flag=true;
+			if(flag){
+				$("h1").css("color","yellowgreen");
+			}else{
+				$("h1").css("color","red");
+			}
+			flag=!flag;
+		},500)
+		
+	</script>
 </html>
